@@ -1,9 +1,10 @@
 <template>
   <ejs-circulargauge :title ='title' orientation='Horizontal'>
       <e-axes>
-        <e-axis :lineStyle='lineStyle' background='rgba(0, 128, 128, 0.3)'>
+        <e-axis minimum=18 maximum=30 :lineStyle='lineStyle' :majorTicks='majorTicks' :minorTicks='minorTicks' background='rgb(255, 255, 255)'>
                 <e-pointers>
-                    <e-pointer value=30></e-pointer>
+                  <e-pointer value=100 :border='border' type='Marker' markerWidth=15 markerHeight=15
+                  markerShape='Circle' radius='100%' color='white'></e-pointer>
                 </e-pointers>
                <e-ranges>
                   <e-range start=18 end=20 startWidth=15 endWidth=15></e-range>
@@ -20,8 +21,22 @@
   import { CircularGaugeComponent as EjsCirculargauge, AxesDirective as EAxes, AxisDirective as EAxis, PointersDirective as EPointers, PointerDirective as EPointer, RangesDirective as ERanges,RangesDirective as ERange, } from '@syncfusion/ej2-vue-circulargauge';
     const title = "Baridi Baridi Remote";
 const lineStyle = {
-    width: 30,
+    width: 40,
     color: 'blue'
+}
+const border = {
+    color: '#FFFFFF',
+    width: 20
+}
+const majorTicks = {
+    interval: 2,
+    height: 10,
+    width: 3
+}
+const minorTicks = {
+    interval: 1,
+    height: 5,
+    width: 2
 }
 </script>
 <style>
@@ -30,7 +45,7 @@ const lineStyle = {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2C3E50;
+  color: #ededed;
   margin-top: 60px;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <ejs-circulargauge :title ='title' orientation='Horizontal'>
+  <ejs-circulargauge  enablePointerDrag='true' height='250px' width='250px'>
       <e-axes>
         <e-axis minimum=18 maximum=30 :lineStyle='lineStyle' :majorTicks='majorTicks' :minorTicks='minorTicks' background='rgb(255, 255, 255)'>
                 <e-pointers>

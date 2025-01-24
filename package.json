@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "@syncfusion/ej2-vue-circulargauge": "^28.1.33",
-    "vue": "^3.5.13"
+    "vue": "^3.5.13",
+    "vuetify": "^3.7.7"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",

@@ -1,12 +1,13 @@
 <script setup>
 import CircularGage from './components/CircularGage.vue';
-import LinearGage from './components/LinearGage.vue';
+// import Linear from './components/LinearGage.vue';
+import LinearSlider from './components/LinearSlider.vue';
 </script>
 
 <template>
   <div>
     <CircularGage />
-    <LinearGage/>
+    <LinearSlider/>
   </div>
 </template>
 
